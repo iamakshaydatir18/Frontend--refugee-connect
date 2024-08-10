@@ -1,0 +1,62 @@
+/* Reset some basic elements */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+}
+
+/* Center the content of the root div */
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logo styles, if you use them */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Logo animation, if you use it */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* For reduced motion preferences */
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Styles for your cards or paper components */
+.card, .paper {
+  padding: 2em;
+}
+
+/* Text color for documentation links or any secondary text */
+.read-the-docs {
+  color: #888;
+}
+.paper {
+  padding: 2em;
+  max-height: calc(100vh - 40px); /* Adjusted to account for padding */
+  overflow-y: auto; /* Allows scrolling */
+}
